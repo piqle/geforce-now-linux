@@ -2,6 +2,7 @@
 
 A modified and maintained launcher for NVIDIA GeForce NOW on Linux.
 
+#### NOTE: THIS IS A PUBLIC REPO BUT IS UNDER REFACTORING. EXPECT ISSUES.
 
 ## Configuration
 

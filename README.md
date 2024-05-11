@@ -7,7 +7,7 @@ A modified and maintained launcher for NVIDIA GeForce NOW on Linux.
 
 The script behaviour can be modified by setting the appropriate environment variables *(or by modifying the script directly).*
 
-### Configuration Options
+### Options
 
 - `START_MAXIMIZED`: Default: **On**. Starts maximized *(Not full screened)*
 - `START_IN_INCOGNITO`: Default: **Off**. Starts in incognito mode *(Note: This may not work)*

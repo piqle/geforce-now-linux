@@ -3,7 +3,7 @@
 A modified and maintained launcher for NVIDIA GeForce NOW on Linux.
 
 
-## Options and default behaviour
+## Configuration
 
 The script behaviour can be modified by setting the appropriate environment variables *(or by modifying the script directly).*
 

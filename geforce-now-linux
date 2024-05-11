@@ -1,8 +1,8 @@
 #!/bin/bash
 #
-# A launcher for NVIDIA GeForce NOW on Linux.
+# A forked and maintained launcher for NVIDIA GeForce NOW on Linux.
 #
-# Copyright (c) 2020-2021 Toni Corvera <outlyer@gmail.com>
+# Forked and maintained by piqle <dylan@piqle.org>
 #
 # MIT License at the bottom of this file
 
@@ -12,6 +12,7 @@
 #  3. https://peter.sh/experiments/chromium-command-line-switches/
 #  4. https://www.whatismybrowser.com/guides/the-latest-user-agent/chrome-os
 #  5. https://developers.whatismybrowser.com/useragents/explore/operating_system_name/chrome-os/
+#  6. https://wiki.archlinux.org/index.php?title=Chromium&oldid=807040#Hardware_video_acceleration
 
 # Configuration, tweak as you see fit. 1=On, anything else means Off
 # NOTE: There's actually no need to edit the script directly, can invoke setting the
@@ -22,7 +23,9 @@ START_MAXIMIZED=${START_MAXIMIZED:-1}         # Starts maximized but not complet
 START_IN_INCOGNITO=${START_IN_INCOGNITO:-0}   # This doesn't seem to have any effect on my system
 START_FULLSCREEN=${START_FULLSCREEN:-1}       # Starts full screen, toggle with F11
 OVERRIDE_USER_AGENT=${OVERRIDE_USER_AGENT:-0} # Pretend to be running under ChromeOS
+HW_ACCELERATION=${HW_ACCELERATION:-0}       # Enables Hardware Video Acceleration 
 
+}
 # The first available known chromium browser will be used
 # Reorder if you have a different preference, or set the CHROMIUM_VARIANTS environment variable
 # as noted above
@@ -63,6 +66,7 @@ Configuration variables:
  OVERRIDE_USER_AGENT: $(on_off $OVERRIDE_USER_AGENT)
  USER_AGENT:          $ua
  CHROMIUM_VARIANTS:   ${CHROMIUM_VARIANTS[@]}
+ HW_ACCELERATION:	  $(on_off $HW_ACCELERATION)
 EOF
 unset ua
 
@@ -93,6 +97,9 @@ fi
 
 if [[ $OVERRIDE_USER_AGENT -eq 1 ]]; then
 	OPTIONS+=( "--user-agent=$USER_AGENT" )
+fi
+if [[ $HW_ACCELERATION -eq 1 ]]; then
+	OPTIONS+-( "--enable-features=VaapiVideoDecodeLinuxGL" )
 fi
 
 echo Running with options: "${OPTIONS[@]}" >&2

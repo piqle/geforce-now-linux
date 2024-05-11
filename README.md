@@ -22,7 +22,7 @@ The script behaviour can be modified by setting the appropriate environment vari
 ## Usage
 ### 1. Clone repository
    ```shell
-   $ git clone https://github.com/piqle/geforce-now-linux/
+   $ git clone https://github.com/piqle/gfn-linux-redux.git
    ```
 ### 2. Launch
 

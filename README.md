@@ -20,12 +20,16 @@ The script behaviour can be modified by setting the appropriate environment vari
 - `HW_ACCELERATION`: Default: **Off**. Enables hardware acceleration *(if not enabled by default)*
 
 ## Usage
+### 1. Clone repository
+   ```shell
+   $ git clone https://github.com/piqle/geforce-now-linux/
+   ```
+### 2. Launch
 
-To invoke e.g. neither maximized nor fullscreen:
+*To invoke e.g. neither maximized nor fullscreen:*
 ```shell
 $ START_MAXIMIZED=0 START_FULLSCREEN=0 geforce-now-linux
 ```
-
 GeForce NOW is launched in *app mode* (i.e. the browser address bar, tabs and menus aren't shown).
 
 ## Supported browsers <a name="supported_browsers"></a>

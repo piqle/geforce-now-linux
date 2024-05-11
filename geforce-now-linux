@@ -25,7 +25,7 @@ START_FULLSCREEN=${START_FULLSCREEN:-1}       # Starts full screen, toggle with 
 OVERRIDE_USER_AGENT=${OVERRIDE_USER_AGENT:-0} # Pretend to be running under ChromeOS
 HW_ACCELERATION=${HW_ACCELERATION:-0}       # Enables Hardware Video Acceleration 
 
-}
+
 # The first available known chromium browser will be used
 # Reorder if you have a different preference, or set the CHROMIUM_VARIANTS environment variable
 # as noted above

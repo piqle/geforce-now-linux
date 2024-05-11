@@ -15,7 +15,7 @@ The script behaviour can be modified by setting the appropriate environment vari
 - `OVERRIDE_USER_AGENT`: Default: **Off**. Pretend to be running under ChromeOS via the User Agent string.
 - `CHROMIUM_VARIANTS`: List of browsers to try, in order of preference.
     
-    **Default:** google-chrome, microsoft-edge, vivaldi, microsoft-edge-dev, chromium
+    -  **Default:** google-chrome, microsoft-edge, vivaldi, microsoft-edge-dev, chromium
 
 - `HW_ACCELERATION`: Default: **Off**. Enables hardware acceleration *(if not enabled by default)*
 

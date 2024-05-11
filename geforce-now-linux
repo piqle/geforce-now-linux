@@ -43,7 +43,7 @@ CHROMIUM_VARIANTS=${CHROMIUM_VARIANTS:-${DEFAULT_CHROMIUM_VARIANTS[@]}}
 # TODO: Match the user agent to the installed version. Probably overkill
 #       The corresponding chrome version is easy (--version) but the CrOS
 #       version probably not so much without a table
-USER_AGENT="Mozilla/5.0 (X11; CrOS x86_64 13020.87.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.119 Safari/537.36"
+Mozilla/5.0 (X11; CrOS x86_64 15633.69.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.6045.212 Safari/537.36
 
 # --- You probably shouldn't change anything below here ---
 

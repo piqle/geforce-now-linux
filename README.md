@@ -1,4 +1,4 @@
-# NVIDIA GeForce NOW on Linux (REDUX)
+# NVIDIA GeForce NOW Linux Launcher (REDUX)
 
 A modified and maintained launcher for NVIDIA GeForce NOW on Linux.
 
